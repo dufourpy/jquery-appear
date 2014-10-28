@@ -2,9 +2,9 @@
 <html>
 
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="jQuery-appear : A jQuery plugin provides appear and disappear events to do lazyload, infinite scroll or else effect." />
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="jQuery-appear : A jQuery plugin provides appear and disappear events to do lazyload, infinite scroll or else effect.">
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
@@ -39,12 +39,14 @@
 <h2>
 <a name="download" class="anchor" href="#download"><span class="octicon octicon-link"></span></a>Download</h2>
 
-<p><a href="https://raw.github.com/emn178/jquery-appear/master/build/jquery.appear.min.js">Compress</a><br><a href="https://raw.github.com/emn178/jquery-appear/master/src/jquery.appear.js">Uncompress</a></p>
+<p><a href="https://raw.github.com/emn178/jquery-appear/master/build/jquery.appear.min.js">Compress</a><br>
+<a href="https://raw.github.com/emn178/jquery-appear/master/src/jquery.appear.js">Uncompress</a></p>
 
 <h2>
 <a name="demo" class="anchor" href="#demo"><span class="octicon octicon-link"></span></a>Demo</h2>
 
-<p><a href="http://emn178.github.io/jquery-appear/samples/lazyload/">Lazyload</a> (You could also refer to <a href="http://github.io/emn178/jquery-lazyload-any/">jQuery-lazyload-any</a>)<br><a href="http://emn178.github.io/jquery-appear/samples/infinite-scroll/">Infinite Scroll</a>  </p>
+<p><a href="http://emn178.github.io/jquery-appear/samples/lazyload/">Lazyload</a> (<a href="http://emn178.github.io/jquery-appear/samples/overflow/">Overflow and Tabs</a>) (You could also refer to <a href="http://github.io/emn178/jquery-lazyload-any/">jQuery-lazyload-any</a>)<br>
+<a href="http://emn178.github.io/jquery-appear/samples/infinite-scroll/">Infinite Scroll</a>  </p>
 
 <h2>
 <a name="browser-support" class="anchor" href="#browser-support"><span class="octicon octicon-link"></span></a>Browser Support</h2>
@@ -66,6 +68,33 @@ HTML</p>
 <div class="highlight highlight-JavaScript"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'#you-want-to-detect'</span><span class="p">).</span><span class="nx">bind</span><span class="p">(</span><span class="s1">'appear'</span><span class="p">,</span> <span class="nx">appearHandler</span><span class="p">);</span>
 <span class="nx">$</span><span class="p">(</span><span class="s1">'#you-want-to-detect'</span><span class="p">).</span><span class="nx">bind</span><span class="p">(</span><span class="s1">'disappear'</span><span class="p">,</span> <span class="nx">disappearHandler</span><span class="p">);</span>
 </pre></div>
+
+<h3>
+<a name="methods" class="anchor" href="#methods"><span class="octicon octicon-link"></span></a>Methods</h3>
+
+<h4>
+<a name="appearcheck" class="anchor" href="#appearcheck"><span class="octicon octicon-link"></span></a>$.appear.check()</h4>
+
+<p>Force to trigger detection event.</p>
+
+<h4>
+<a name="appearsetintervalinverval" class="anchor" href="#appearsetintervalinverval"><span class="octicon octicon-link"></span></a>$.appear.setInterval(inverval)</h4>
+
+<p>Set interval of timer that check container display status.</p>
+
+<h5>
+<a name="inverval-number-default-50" class="anchor" href="#inverval-number-default-50"><span class="octicon octicon-link"></span></a><em>inverval: <code>Number</code> (default: <code>50</code>)</em>
+</h5>
+
+<p>Interval of timer. Set 0 to disable timer, and you can use <code>$.appear.check()</code> to trigger detection manually.</p>
+
+<h3>
+<a name="notice" class="anchor" href="#notice"><span class="octicon octicon-link"></span></a>Notice</h3>
+
+<ul>
+<li>You should initialize after the element add to page. Or it can't detect whether it's in screen. If you do that, you still can use <code>$.appear.check()</code> to force detection.</li>
+<li>Detection uses jQuery <code>element.is(':visible')</code>, it will return false if element's width and height are equal to zero. So you have to make sure the appear element with any width or height.</li>
+</ul>
 
 <h2>
 <a name="example" class="anchor" href="#example"><span class="octicon octicon-link"></span></a>Example</h2>
