@@ -88,6 +88,17 @@ HTML</p>
 
 <p>Interval of timer. Set 0 to disable timer, and you can use <code>$.appear.check()</code> to trigger detection manually.</p>
 
+<h4>
+<a name="appearrefreshselector" class="anchor" href="#appearrefreshselector"><span class="octicon octicon-link"></span></a>$.appear.refresh(selector)</h4>
+
+<p>Refresh status of elements bound event. Element will bind scroll event to parent scrollable automatically when binding appear event. If you move element, you should use this method to bind again.</p>
+
+<h5>
+<a name="selector-string-or-object-default-undefined" class="anchor" href="#selector-string-or-object-default-undefined"><span class="octicon octicon-link"></span></a><em>selector: <code>String</code> or <code>Object</code> (default: <code>undefined</code>)</em>
+</h5>
+
+<p>The elements that you want to refresh. It will refresh all elements bound appear event if you don't pass this parameter.</p>
+
 <h3>
 <a name="notice" class="anchor" href="#notice"><span class="octicon octicon-link"></span></a>Notice</h3>
 
