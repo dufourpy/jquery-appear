@@ -32,75 +32,81 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h1>
-<a name="jquery-appear" class="anchor" href="#jquery-appear"><span class="octicon octicon-link"></span></a>jQuery-appear</h1>
+<a id="jquery-appear" class="anchor" href="#jquery-appear" aria-hidden="true"><span class="octicon octicon-link"></span></a>jQuery-appear</h1>
 
 <p>A jQuery plugin provides appear and disappear events to do lazyload, infinite scroll or else effect.</p>
 
 <h2>
-<a name="download" class="anchor" href="#download"><span class="octicon octicon-link"></span></a>Download</h2>
+<a id="download" class="anchor" href="#download" aria-hidden="true"><span class="octicon octicon-link"></span></a>Download</h2>
 
 <p><a href="https://raw.github.com/emn178/jquery-appear/master/build/jquery.appear.min.js">Compress</a><br>
 <a href="https://raw.github.com/emn178/jquery-appear/master/src/jquery.appear.js">Uncompress</a></p>
 
 <h2>
-<a name="demo" class="anchor" href="#demo"><span class="octicon octicon-link"></span></a>Demo</h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>You can also install jquery-appear by using Bower.</p>
+
+<pre><code>bower install jquery-appear
+</code></pre>
+
+<h2>
+<a id="demo" class="anchor" href="#demo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Demo</h2>
 
 <p><a href="http://emn178.github.io/jquery-appear/samples/lazyload/">Lazyload</a> (<a href="http://emn178.github.io/jquery-appear/samples/overflow/">Overflow and Tabs</a>) (You could also refer to <a href="http://github.io/emn178/jquery-lazyload-any/">jQuery-lazyload-any</a>)<br>
 <a href="http://emn178.github.io/jquery-appear/samples/infinite-scroll/">Infinite Scroll</a>  </p>
 
 <h2>
-<a name="browser-support" class="anchor" href="#browser-support"><span class="octicon octicon-link"></span></a>Browser Support</h2>
+<a id="browser-support" class="anchor" href="#browser-support" aria-hidden="true"><span class="octicon octicon-link"></span></a>Browser Support</h2>
 
 <p>jQuery-appear currently supports IE7+, Chrome, Firefox, Safari and Opera.</p>
 
 <h2>
-<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
 
 <p>You could just use jQuery <code>bind</code>, <code>delegate</code> or <code>on</code> to listen event.
 HTML</p>
 
-<div class="highlight highlight-HTML"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"#you-want-to-detect"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
+<div class="highlight highlight-HTML"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">id</span>=<span class="pl-s1"><span class="pl-pds">"</span>#you-want-to-detect<span class="pl-pds">"</span></span>&gt;
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
 
 <p>JavaScript</p>
 
-<div class="highlight highlight-JavaScript"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'#you-want-to-detect'</span><span class="p">).</span><span class="nx">bind</span><span class="p">(</span><span class="s1">'appear'</span><span class="p">,</span> <span class="nx">appearHandler</span><span class="p">);</span>
-<span class="nx">$</span><span class="p">(</span><span class="s1">'#you-want-to-detect'</span><span class="p">).</span><span class="nx">bind</span><span class="p">(</span><span class="s1">'disappear'</span><span class="p">,</span> <span class="nx">disappearHandler</span><span class="p">);</span>
-</pre></div>
+<div class="highlight highlight-JavaScript"><pre>$(<span class="pl-s1"><span class="pl-pds">'</span>#you-want-to-detect<span class="pl-pds">'</span></span>).bind(<span class="pl-s1"><span class="pl-pds">'</span>appear<span class="pl-pds">'</span></span>, appearHandler);
+$(<span class="pl-s1"><span class="pl-pds">'</span>#you-want-to-detect<span class="pl-pds">'</span></span>).bind(<span class="pl-s1"><span class="pl-pds">'</span>disappear<span class="pl-pds">'</span></span>, disappearHandler);</pre></div>
 
 <h3>
-<a name="methods" class="anchor" href="#methods"><span class="octicon octicon-link"></span></a>Methods</h3>
+<a id="methods" class="anchor" href="#methods" aria-hidden="true"><span class="octicon octicon-link"></span></a>Methods</h3>
 
 <h4>
-<a name="appearcheck" class="anchor" href="#appearcheck"><span class="octicon octicon-link"></span></a>$.appear.check()</h4>
+<a id="appearcheck" class="anchor" href="#appearcheck" aria-hidden="true"><span class="octicon octicon-link"></span></a>$.appear.check()</h4>
 
 <p>Force to trigger detection event.</p>
 
 <h4>
-<a name="appearsetintervalinverval" class="anchor" href="#appearsetintervalinverval"><span class="octicon octicon-link"></span></a>$.appear.setInterval(inverval)</h4>
+<a id="appearsetintervalinverval" class="anchor" href="#appearsetintervalinverval" aria-hidden="true"><span class="octicon octicon-link"></span></a>$.appear.setInterval(inverval)</h4>
 
 <p>Set interval of timer that check container display status.</p>
 
 <h5>
-<a name="inverval-number-default-50" class="anchor" href="#inverval-number-default-50"><span class="octicon octicon-link"></span></a><em>inverval: <code>Number</code> (default: <code>50</code>)</em>
+<a id="inverval-number-default-50" class="anchor" href="#inverval-number-default-50" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>inverval: <code>Number</code> (default: <code>50</code>)</em>
 </h5>
 
 <p>Interval of timer. Set 0 to disable timer, and you can use <code>$.appear.check()</code> to trigger detection manually.</p>
 
 <h4>
-<a name="appearrefreshselector" class="anchor" href="#appearrefreshselector"><span class="octicon octicon-link"></span></a>$.appear.refresh(selector)</h4>
+<a id="appearrefreshselector" class="anchor" href="#appearrefreshselector" aria-hidden="true"><span class="octicon octicon-link"></span></a>$.appear.refresh(selector)</h4>
 
 <p>Refresh status of elements bound event. Element will bind scroll event to parent scrollable automatically when binding appear event. If you move element, you should use this method to bind again.</p>
 
 <h5>
-<a name="selector-string-or-object-default-undefined" class="anchor" href="#selector-string-or-object-default-undefined"><span class="octicon octicon-link"></span></a><em>selector: <code>String</code> or <code>Object</code> (default: <code>undefined</code>)</em>
+<a id="selector-string-or-object-default-undefined" class="anchor" href="#selector-string-or-object-default-undefined" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>selector: <code>String</code> or <code>Object</code> (default: <code>undefined</code>)</em>
 </h5>
 
 <p>The elements that you want to refresh. It will refresh all elements bound appear event if you don't pass this parameter.</p>
 
 <h3>
-<a name="notice" class="anchor" href="#notice"><span class="octicon octicon-link"></span></a>Notice</h3>
+<a id="notice" class="anchor" href="#notice" aria-hidden="true"><span class="octicon octicon-link"></span></a>Notice</h3>
 
 <ul>
 <li>You should initialize after the element add to page. Or it can't detect whether it's in screen. If you do that, you still can use <code>$.appear.check()</code> to force detection.</li>
@@ -108,27 +114,25 @@ HTML</p>
 </ul>
 
 <h2>
-<a name="example" class="anchor" href="#example"><span class="octicon octicon-link"></span></a>Example</h2>
+<a id="example" class="anchor" href="#example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example</h2>
 
 <p>HTML</p>
 
-<div class="highlight highlight-HTML"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"loading"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"loading.gif"</span> <span class="nt">/&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
+<div class="highlight highlight-HTML"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">id</span>=<span class="pl-s1"><span class="pl-pds">"</span>loading<span class="pl-pds">"</span></span>&gt;
+  &lt;<span class="pl-ent">img</span> <span class="pl-e">src</span>=<span class="pl-s1"><span class="pl-pds">"</span>loading.gif<span class="pl-pds">"</span></span> /&gt;
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
 
 <p>JavaScript</p>
 
-<div class="highlight highlight-JavaScript"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'#loading'</span><span class="p">).</span><span class="nx">bind</span><span class="p">(</span><span class="s1">'appear'</span><span class="p">,</span> <span class="nx">ajaxLoad</span><span class="p">);</span>
-</pre></div>
+<div class="highlight highlight-JavaScript"><pre>$(<span class="pl-s1"><span class="pl-pds">'</span>#loading<span class="pl-pds">'</span></span>).bind(<span class="pl-s1"><span class="pl-pds">'</span>appear<span class="pl-pds">'</span></span>, ajaxLoad);</pre></div>
 
 <h2>
-<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
 
 <p>The project is released under the <a href="http://www.opensource.org/licenses/MIT">MIT license</a>.</p>
 
 <h2>
-<a name="contact" class="anchor" href="#contact"><span class="octicon octicon-link"></span></a>Contact</h2>
+<a id="contact" class="anchor" href="#contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contact</h2>
 
 <p>The project's website is located at <a href="https://github.com/emn178/jquery-appear">https://github.com/emn178/jquery-appear</a><br>
 Author: <a href="mailto:emn178@gmail.com">emn178@gmail.com</a></p>
