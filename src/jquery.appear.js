@@ -87,7 +87,7 @@
     if(element.data(SCROLLER_KEY)) {
       return false;
     }
-    var overflow = element.css('overflow');
+    var overflow = element.css('overflow-y');
     if(overflow != 'scroll' && overflow != 'auto') {
       return false;
     }
